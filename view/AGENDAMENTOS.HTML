@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDAMENTOS</title>
+    <link rel="stylesheet" href="src/styles/mental.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Baloo+Bhai+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<!--
+<script>
+    // Função para verificar se o usuário está logado
+    function checkLogin() {
+        // Aqui você pode verificar se o usuário está logado
+        // Por exemplo, verificando um token no localStorage
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+        if (!isLoggedIn) {
+            // Se o usuário não estiver logado, redirecione para a página de login
+            window.location.href ='./3 LOGIN.HTML';
+        }
+    }
+
+    // Chame a função checkLogin quando a página carregar
+    window.onload = checkLogin;
+</script>
+-->
+<body>
+    <header class="cabecalho">
+        <div class="titulos">
+        <h1 class="container__caixa__logo">Mental Health</h1>
+        <h2 class="container__caixa__logo-dois">Hub</h2>
+    </div>
+    </header>
+
+    <div class="seta">
+        <a href="./INDEX.HTML">
+            <img src="src/image/seta.png" alt="seta" class="seta">
+        </a>
+    </div>
+    
+
+    <div class="container__agendamentos">
+        <p>AGENDAMENTOS</p>
+        <h1>Agende sua sessão</h1>
+    
+        <div class="data">
+            <label class="data-sessao" for="Data">Data:</label>
+            <input type="date" name="data" id="data" />
+        </div>
+           
+       
+        <div class="psicologo">
+            <label class="psicologo">
+                <input type="radio" class="psicologo" name="service" value="psicologo">
+                <span class="psicologo">Psicólogo </span>
+            </label>
+        </div>
+        <div class="terapia">
+            <label class="terapia">
+                <input type="radio" class="terapia" name="service" value="terapia-online">
+                <span class="terapia">Terapia online</span>
+            </label>
+        </div>
+        <div class="profissionais">
+            <label for="profissional">Profissionais:</label>
+          <select name="profissional" id="profissional">
+            <option value="">Selecione</option>
+            <option value="Ana Paula - Psicóloga Clinica">Ana Paula - Psicóloga Clinica</option>
+            <option value="Alice Vieira - Psicóloga Clinica">Alice Vieira - Psicóloga Clinica</option>
+            <option value="Juliana Carvalho - Psicóloga Clinica">Juliana Carvalho - Psicóloga Clinica</option>
+          </select>
+        </div>
+        <div class="Pacote">
+            <label for="profissional">Pacote:</label>
+          <select name="profissional" id="profissional">
+            <option value="">Selecione</option>
+            <option value="1 vez por semana">1 vez por semana</option>
+            <option value="2 vezes por semana">2 vezes por semana</option>
+            <option value="3 vezes por semana">3 vezes por semana</option>
+           
+          </select>
+        </div>
+        <div class="descrição-aviso">
+            <h3>(Ao optar pelo paote de 2 ou 3 vezes na semana, você poderá <br> escolher os dias de atendimento após a primeira consulta.)</h3>
+        </div>
+        <div class="Pagamento">
+            <label for="profissional">Forma de pagamento:</label>
+          <select name="profissional" id="profissional">
+            <option value="">Selecione</option>
+            <option value="Crédito">Crédito</option>
+            <option value="Débito">Débito</option>
+            <option value="Pix">Pix</option>
+          </select>
+        </div>
+        <div class="termos-de-uso">
+            <input type="checkbox" class="termos" id="terms">
+            <label for="terms" class="termos">DECLARO QUE LI E CONCORDO COM OS TERMOS DE SERVIÇO</label>
+        </div>
+        <div class="botao-entrar">
+            <button>Agendar</button>
+        </div>
+    </div>
+    
+    </body>
+</html>

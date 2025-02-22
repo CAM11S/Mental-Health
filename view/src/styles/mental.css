@@ -1,0 +1,750 @@
+:root{
+    --verde-principal:#E2EBEA;
+    --verde-secundario:#518D83;
+    --branco:#FFFFFF;
+    --fonte_principal:"Baloo Bhai 2";
+    --fonte_secundaria:"Abel";
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+header {
+    display: flex;
+    align-items: center;
+}
+ 
+body {
+    background-color: var(--verde-principal);
+}
+ 
+.cabecalho{
+    background-color:var(--branco);
+    padding: 10px;
+   
+}
+.container__caixa {
+    margin-bottom: 10px;
+}
+
+.container__logo {
+    display: flex;
+    align-items: center; 
+    margin-left: 50em;
+    margin-bottom: 30px;
+}
+
+.container__caixa-descrição {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 30px;
+    position: relative;
+    top: -150px; 
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__caixa__logo{
+    color: #518D83;
+    font-family: var(--fonte_principal);
+}
+
+.container__caixa__logo-dois{
+    color: #518D83;
+    font-family: var(--fonte_principal);
+    width: 100px;
+    text-align: center;
+    margin-top: -18px;
+    font-size: 18px;
+}
+.link {
+    position: absolute;
+    margin-left: 90em;
+}
+.container__caixa-link{
+    color: #518D83;
+    font-family: var(--fonte_principal);
+    text-decoration: none;
+    padding: 10px;
+}
+.container__caixa-login{
+    font-family: var(--fonte_principal);
+    background-color:var(--verde-secundario);
+    color: var(--verde-principal);
+    border: none;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 30px;
+}
+#login {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 250px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+#password {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 250px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+
+.container__login-senha img {
+    width: 240px;
+    height: 200px;
+} 
+
+.container__login-senha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+.aa{
+    display: flex;
+    font-size: 15px;
+    color: var(--verde-secundario);
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.container__esqueci h2{
+    font-size: 15px;
+    text-align: center;
+    color: #A8A4A4;
+}
+.criar {
+    color: var(--verde-secundario);
+    cursor: pointer;
+    text-decoration: none;
+}
+.botao-entrar{
+    margin: 20px;
+}
+.botao-entrar a{
+    font-family: var(--fonte_principal);
+    background-color:var(--verde-secundario);
+    color: var(--verde-principal);
+    border: none;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: "Jaldi";
+}
+.container__cadeado{
+    width: 20px;
+}
+.container-imagem{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    list-style-type: none;
+}
+.container-imagem img{
+    width: 320px;
+}
+.container-psicologo{
+    background-color: var(--verde-secundario);
+    padding: 2px;
+    font-size: 27px;
+}
+.container-psicologo p{
+    color: #2B665C;
+    font-size: 50px;
+    text-align: center;
+    margin: 150px;
+}
+
+.container-psicologo-grupos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    font-family: var(--fonte_secundaria);
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 30px;
+}
+
+.container-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container-card h3 {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 26px;
+    color: var(--verde-principal);
+    font-family: var(--fonte_secundaria);
+}
+
+.container-card p {
+    text-align: left;
+    margin: 5px 0;
+    font-size: 18px;
+    color: var(--verde-principal);
+    font-family: var(--fonte_secundaria);
+}
+
+
+.container__nossos-serviços {
+     margin: 200px;
+}
+.container__nossos-serviços p{
+    justify-content: center;
+    font-size: 30px;
+    padding: 100px;
+    text-align: center;
+    color: var(--verde-secundario);
+    font-family: var(--fonte_principal);
+    margin: 30px;
+    
+
+    
+}
+.container_serviços li{
+    gap: 200px;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+}
+
+.sobre-nos {
+    color: #2B665C;
+    font-size: 50px;
+    margin: 80px;
+    padding: 5px;
+    text-align: center;
+
+}
+.container_sobre-nós {
+    color: #FFFFFF;
+    padding: 190px;
+    margin: 10px;
+    font-size: 40px;
+    background-color: var(--verde-secundario);
+    text-align: center;
+    font-family: var(--fonte_secundaria);
+    color: var(--verde-principal);
+}
+
+.container__dispositivos li{
+    text-align: center;
+    list-style-type: none;
+}
+
+.container__dispositivos {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+    color: #2B665C;
+    position: relative;
+    top: -70px;
+}
+.container-texto {
+    color: #2B665C;
+    font-size: 25px;
+    margin: 80px;
+    padding: 5px;
+    text-align: center;
+}
+.rodape {
+    font-family: var(--fonte-segundaria);
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+    font-size: 16px;
+}
+
+.rodape__lista li a {
+    text-decoration: none;
+    color: var(--branco-segundario);
+    margin: 0 1em;
+}
+
+.rodape p {
+    font-size: 14px;
+    color: var(--branco-segundario);
+    margin: 1em 0;
+}
+
+.cadastro p{
+    text-align: center;
+    color: var(--verde-secundario);
+    font-family: var(--fonte_principal);
+    font-size: 45px;
+    padding: 90px;
+}
+.container_criar_cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nome {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 550px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+
+input {
+    border: transparent;
+    background-color: var(--verde-principal);
+}
+#email {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 550px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+.container_numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+#telefone  {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 550px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+#senha{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 550px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+
+#senha input{
+    display: inline-block;
+    border: transparent;
+    background-color: var(--verde-principal);
+    color: #A8A4A4;
+    flex-direction: row-reverse;
+}
+#confirmar-senha{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 550px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+
+.container_passoword {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: transparent;
+}
+.container_termos {
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    text-align: center;
+    margin: 35px;
+    font-size: 15px;
+}
+.botao_cadastro{
+    margin: 20px;
+    text-align: center;
+}
+.botao_cadastro a{
+    font-family: var(--fonte_principal);
+    background-color:var(--verde-secundario);
+    color: var(--verde-principal);
+    border: none;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 55px;
+    font-size: 20px;
+    font-family: var(--fonte_secundaria);
+    align-items: center;
+}
+
+.container__agendamentos{
+    background-color: var(--verde-principal);
+    height: 20px;
+    
+}
+.container__agendamentos p{
+    font-family: var(--fonte_principal);
+    color: var(--verde-secundario);
+    background-color: var(--verde-principal);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-size: 60px;
+    min-height: 30px;
+    margin-top: 10px;
+}
+
+.container__agendamentos h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5px;
+    color: var(--verde-secundario);
+    margin-bottom: 1rem;
+    font-family: var(--fonte_principal);
+}
+.data{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+    font-size: 30px;
+    font-family: var(--fonte_principal);
+    
+}
+#data{
+    font-size: 18px;
+    margin-left: 15px;
+}
+.psicologo{
+    display: flex;
+    justify-content: center;
+    margin-right: 11px;
+    font-size: 30px;
+    font-family: var(--fonte_secundaria);
+    margin-left: 5px;
+}
+.terapia{
+    display: flex;
+    justify-content: center;
+    margin-left: 13px;
+    margin-right:3px;
+    font-size: 30px;
+    font-family: var(--fonte_secundaria);
+}
+.profissionais{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;   
+    font-size: 30px;
+    font-family: var(--fonte_secundaria);
+    margin: 40px;
+    background-color: var(--verde-principal);
+    
+}
+#profissional{
+    background-color: var(--verde-principal);
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.Pacote{
+    display: flex;
+    justify-content: center;
+    margin-right: 1px;   
+    font-size: 30px;
+    font-family: var(--fonte_secundaria);
+    background-color: var(--verde-principal);
+}
+
+.descrição-aviso{
+    margin-top: 10px;
+    text-align: center;
+    font-family: var(--fonte_secundaria);
+    color: var(--verde-secundario);
+    font-size: 10px;
+}
+
+.Pagamento{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    margin-right: 1px;   
+    font-size: 30px;
+    font-family: var(--fonte_secundaria);
+    background-color: var(--verde-principal);
+}
+
+
+.termos-de-uso{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-size: 10px;
+   
+}
+.termos{
+    margin-left: 10px;
+}
+
+.botao-entrar{
+    height: 3
+    40px;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    color: var(--verde-secundario);
+}
+
+.botao-entrar button{
+    font-family: var(--fonte_secundaria);
+    background-color:var(--verde-secundario);
+    color: var(--verde-principal);
+    align-items: center;
+    border: none;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 55px;
+    font-size: 20px;
+}
+#dois {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid #518D83;
+    width: 250px;
+    border-radius: 200px;
+    color: #A8A4A4;
+    font-family: "Jaldi";
+    padding: 10px;
+    background-color: var(--verde-principal);
+}
+.termos p{
+    font-family: var(--fonte_secundaria);
+    margin: 5px;
+}
+.termos {
+    padding: 10px;
+    margin: 20px;
+}
+.termos H2{
+    margin: 5px;
+}
+.termos H3{
+    margin: 5px;
+}
+.termos H2{
+    margin: 5px;
+}
+h1 {
+    margin: 10px;
+}
+
+.titulo h1 {
+    color: var(--verde-secundario);
+    font-family: var(--fonte_principal);
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+
+.titulo p{
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 100px;
+   
+}
+
+.lista {
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    font-size: 25px;
+    margin: 100px;
+    height: 10px;
+}
+
+.cuidar{
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 100px;
+}
+
+.dicas h1{
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 70px;
+}
+
+.dicas p{
+    font-family: var(--fonte_secundaria);
+    color: var(--verde-secundario);
+    text-align: center;
+}
+
+.dicas h2{
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 100px;
+}
+
+.seta{
+  width: 50px;
+}
+
+
+.termos h1{
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    font-size: 30px;
+}
+
+.termos h2{
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    font-size: 20px;
+}
+
+.termos h3{
+    color: var(--verde-secundario);
+    font-family: var(--fonte_secundaria);
+    font-size: 15px;
+}
+
+.termos p{
+    font-family: var(--fonte_secundaria);
+    color: var(--verde-secundario);
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+    img {
+      width: 100%;
+    }
+
+    body{
+        width: 50%;
+    }
+  }
+
+
+
+/* 📱 Celulares (até 767px) */
+@media screen and (max-width: 767px) {
+    #container__nossos-serviços {
+        font-size: 14px;
+        background-color: #e0f7fa;
+        width: 200%;
+    }
+
+    body {
+        width: 95%;
+        padding: 10px;
+        
+    }
+}
