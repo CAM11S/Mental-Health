@@ -141,30 +141,24 @@ function buscarPsicologo(id) {
     });
 }
 
-function verificarUsuario(email, senha) {
-    return new Promise((resolve, reject) => {
-        const tx = db.transaction("usuarios", "readonly");
-        const store = tx.objectStore("usuarios");
-        const request = store.get(email);
-        request.onsuccess = function() {
-            const usuario = request.result;
-            if (usuario) {
-                hashSenha(senha).then((senhaHash) => {
-                    if (usuario.senha === senhaHash) {
-                        resolve("Login bem-sucedido!");
-                    } else {
-                        reject("Email ou senha incorretos!");
-                    }
-                });
-            } else {
-                reject("Usuário não encontrado!");
-            }
-        };
-        request.onerror = function() {
-            reject("Erro ao buscar usuário.");
-        };
-    });
- }
+function verificarUsuario(email, senha){ 
+    
+    const tx = db.transaction("usuario", "readonly");
+    const store = tx.objectStore("usuario");
+
+    const request = store.get(email);
+    request.onsuccess = function() { 
+        const usuario = request.result;
+        if (usuario && usuario.senha === senha) { 
+            window.alert("Login bem-sucedido!"); 
+        } else { 
+            window.alert("Email ou senha incorretos!");
+        } return;
+    }; 
+    request.onerror = function() { 
+        alert("Erro ao buscar usuário."); 
+    }; 
+}
 
 // Exportando as funções
 window.db = {
