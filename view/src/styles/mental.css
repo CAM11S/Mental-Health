@@ -724,14 +724,18 @@ h1 {
 
 @media only screen and (max-width: 480px) {
     img {
-      width: 100%;
+    width: 100%;
     }
 
     body{
         width: 50%;
     }
-  }
-
+}
+button {
+    background-color: #518D83;
+    display: flex;
+    justify-content: center;
+}
 
 
 /* 📱 Celulares (até 767px) */

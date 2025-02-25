@@ -30,7 +30,7 @@
     <div class="container__login-senha">
  
         <img src="src/image/foto.png" alt="">
- 
+ <form class="loginForm">
         <div class="container_emailcadastro-dois">
             <label for="email"></label>
           <input type="text" name="dois" id="dois" placeholder="E-mail@gmail.com" required />
@@ -41,11 +41,13 @@
               <div class="botao_cadastro">
                 <button type="submit">ENTRAR</button>
             </div>
-
+ </form>
         <div class="container__esqueci">
             <a class="aa" href="./ESQUECI.HTML">ESQUECI MINHA SENHA </a>
             <h2>Ainda não possui cadastro? <a class="criar" href="./CADASTRO.html">Criar uma Conta!</a><h2>
         </div>
     </div>
+    <script src="../model/bd.js"></script>
+    <script src="../controller/main.js"></script>
 </body>
 </html>
