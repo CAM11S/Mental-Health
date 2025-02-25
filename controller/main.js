@@ -47,3 +47,40 @@ function validaSenha(senha, confirmarSenha) {
     return senha === confirmarSenha;
 }
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let form = document.getElementById("login-form"); 
+    if (!form) {
+        console.error("Erro: Formulário de login não encontrado!");
+        return;
+    }
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        let emailForm = document.getElementById("email").value;
+        let senhaForm = document.getElementById("senha").value;
+
+        if (typeof db === "undefined") {
+            console.error("Erro: 'db' não está definido.");
+            return;
+        }
+        db.verificarUsuario(emailForm, senhaForm)
+            .then((usuario) => {
+                if (usuario) {
+                    console.log("Login bem-sucedido!");
+                    window.location.href = "../view/LOGIN.HTML"; 
+                } else {
+                    window.alert("Email ou senha incorretos.");
+                }
+            })
+            .catch((error) => {
+                console.error("Erro ao verificar usuário:", error);
+            });
+    });
+});
+
+function verificarUsuario(emailForm, senhaForm) {
+    return usuario.senha === senhaHash;
+}

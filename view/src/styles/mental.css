@@ -31,11 +31,11 @@ body {
 }
 
 .container__logo {
-    display: flex;
-    align-items: center; 
-    margin-left: 50em;
-    margin-bottom: 30px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
+ 
 
 .container__caixa-descrição {
     text-align: center;
@@ -732,26 +732,54 @@ h1 {
     }
 }
 button {
-    background-color: #518D83;
-    display: flex;
-    justify-content: center;
+    font-family: var(--fonte_principal);
+    background-color:var(--verde-secundario);
+    color: var(--verde-principal);
+    border: none;
+    border-radius: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: "Jaldi";
 }
 
 
-/* 📱 Celulares (até 767px) */
-@media screen and (max-width: 767px) {
+📱 Celulares (até 767px)
+@media screen and (max-width: 1920px) {
     #container__nossos-serviços {
         font-size: 14px;
-        background-color: #e0f7fa;
-        width: 200%;
+        width: 4
+    } 
+    #container__nossos-serviços p{
+        width: 100%;
+        padding: 10px;    
     }
+}
 
     body {
         width: 95%;
         padding: 10px;
         
+} 
+📱 Celulares (até 767px)
+@media screen and (max-width: 1920px) {
+    #container__logo {
+        font-size: 14px;
+        width: 4
+    } 
+    #img{
+        width: 100%;
+        padding: 10px;    
     }
 }
+
+    body {
+        width: 95%;
+        padding: 10px;
+        
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Ajusta a largura */
