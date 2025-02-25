@@ -8,14 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Baloo+Bhai+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<!--
-teste
-<script>
+
+<!-- <script>
     // Função para verificar se o usuário está logado
     function checkLogin() {
         // Aqui você pode verificar se o usuário está logado
@@ -24,14 +22,14 @@ teste
 
         if (!isLoggedIn) {
             // Se o usuário não estiver logado, redirecione para a página de login
-            window.location.href ='./3 LOGIN.HTML';
+            window.location.href ='./LOGIN.HTML';
         }
     }
 
     // Chame a função checkLogin quando a página carregar
     window.onload = checkLogin;
-</script>
--->
+</script>  -->
+
 <body>
     <header class="cabecalho">
         <div class="titulos">
@@ -50,7 +48,7 @@ teste
     <div class="container__agendamentos">
         <p>AGENDAMENTOS</p>
         <h1>Agende sua sessão</h1>
-    
+        <form id="form">
         <div class="data">
             <label class="data-sessao" for="Data">Data:</label>
             <input type="date" name="data" id="data" />
@@ -107,7 +105,8 @@ teste
         <div class="botao-entrar">
             <button>Agendar</button>
         </div>
-    </div>
-    
-    </body>
+    </form>
+    <script src="../model/bd.js"></script>
+    <script src="../controller/main.js"></script>
+ </body>
 </html>

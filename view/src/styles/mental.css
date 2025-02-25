@@ -748,3 +748,12 @@ h1 {
         
     }
 }
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Ajusta a largura */
+    }
+    .botao {
+        font-size: 16px; /* Reduz o tamanho do botão */
+        padding: 12px 24px;
+    }
+}

@@ -11,6 +11,9 @@ function abrirBanco() {
             if (!db.objectStoreNames.contains("psicologos")) {
                 db.createObjectStore("psicologos", { keyPath: "id" });
             }
+            if (!db.objectStoreNames.contains("agendamentos")) {
+                db.createObjectStore("agendamentos", { keyPath: "id" });
+            }
         };
 
         request.onsuccess = function(event) {
@@ -138,10 +141,12 @@ function buscarPsicologo(id) {
     });
 }
 
+
+
 // Exportando as funções
 window.db = {
     adicionarUsuario,
     buscarUsuario,
     adicionarPsicologo,
-    buscarPsicologo
+    buscarPsicologo,
 };
